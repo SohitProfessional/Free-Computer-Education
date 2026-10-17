@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Learn computer skills for free. Explore lessons and take online tests.">
+  <title>Free Computer Education</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <script defer src="/app.js"></script>
+</head>
+<body>
+  <div class="announcement">100% free learning · No course enrollment required</div>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Free Computer Education home"><span class="brand-mark">F</span><span>Free Computer <b>Education</b></span></a>
+    <button class="mobile-menu" id="mobile-menu" aria-label="Toggle navigation">☰</button>
+    <nav id="main-nav">
+      <a href="#courses">Explore courses</a><a href="#tests">Online tests</a>
+      <a href="/dashboard" id="dashboard-link" hidden>My dashboard</a>
+      <a href="/admin" id="admin-link" hidden>Admin</a>
+      <a href="/login" class="nav-login" id="login-link">Log in</a>
+      <button class="btn btn-primary btn-small" id="logout-button" hidden>Log out</button>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> YOUR SKILLS. YOUR FUTURE.</div>
+        <h1>Computer skills for everyone. <span>Completely free.</span></h1>
+        <p class="hero-description">Build confidence with practical, easy-to-follow computer lessons. Read every published course without signing up or enrolling.</p>
+        <form class="search-form" id="search-form"><span aria-hidden="true">⌕</span><input id="search-input" type="search" placeholder="Search Word, Excel, HTML, internet..." aria-label="Search lessons and courses"><button class="btn btn-primary" type="submit">Search lessons <span>→</span></button></form>
+        <div class="hero-trust"><span>✓ No enrollment</span><span>✓ Learn at your pace</span><span>✓ Free online tests</span></div>
+      </div>
+      <div class="hero-art" aria-label="Illustration of online learning">
+        <div class="art-glow"></div><div class="floating-tag tag-top">✦ Learn by doing</div>
+        <div class="laptop"><div class="laptop-screen"><div class="screen-top"><i></i><i></i><i></i><span>learning.space</span></div><div class="screen-content"><div class="screen-sidebar"><b></b><i></i><i></i><i></i></div><div class="screen-main"><small>YOUR NEXT SKILL</small><strong>Digital<br>confidence.</strong><div class="code-line long"></div><div class="code-line"></div><div class="screen-progress"><span></span></div></div></div></div><div class="laptop-base"></div></div>
+        <div class="floating-tag tag-bottom"><span class="mini-check">✓</span><span><b>One lesson at a time</b><small>Progress starts here</small></span></div>
+      </div>
+    </section>
+    <section class="stats-strip"><div><strong>100%</strong><span>Free learning</span></div><div><strong>Anytime</strong><span>Study at your pace</span></div><div><strong>Practical</strong><span>Skills that matter</span></div><div><strong>Open</strong><span>No enrollment needed</span></div></section>
+    <section class="section" id="courses">
+      <div class="section-heading"><div><div class="eyebrow">THE LEARNING LIBRARY</div><h2>Find your next skill</h2><p>Choose a subject and start learning right away.</p></div><span class="result-count" id="course-count">Loading courses…</span></div>
+      <div class="filter-row"><div class="chips" id="category-chips"><button class="chip active" data-category="All">All subjects</button></div></div>
+      <div class="course-grid" id="course-grid"><div class="loading-card">Loading free courses…</div></div>
+      <div class="empty-state" id="course-empty" hidden><span>⌕</span><h3>No courses found</h3><p>Try another search, or check back soon.</p></div>
+    </section>
+    <section class="test-banner" id="tests"><div class="test-icon">✳</div><div><div class="eyebrow">READY TO CHECK YOUR SKILLS?</div><h2>Practice with online tests</h2><p>Reading lessons is always open. Log in only when you're ready to start a test and save your results.</p></div><a class="btn btn-light" href="#test-list">Explore tests <span>→</span></a></section>
+    <section class="section tests-section" id="test-list"><div class="section-heading"><div><div class="eyebrow">TEST YOUR KNOWLEDGE</div><h2>Available online tests</h2><p>Preview tests publicly. Sign in only to begin an attempt.</p></div></div><div id="test-grid" class="test-grid"><p class="muted">Loading tests…</p></div></section>
+    <section class="feature-band"><div><div class="eyebrow">LEARNING WITHOUT LIMITS</div><h2>Start where you are.<br><span>Grow from there.</span></h2></div><div class="feature-list"><div><span>01</span><p><b>Explore freely</b><small>All published lessons are open to everyone.</small></p></div><div><span>02</span><p><b>Learn by practice</b><small>Step-by-step tutorials and useful examples.</small></p></div><div><span>03</span><p><b>Check your progress</b><small>Sign in when you're ready to take a test.</small></p></div></div></section>
+  </main>
+  <footer class="footer"><a class="brand" href="/"><span class="brand-mark">F</span><span>Free Computer <b>Education</b></span></a><p>Practical digital skills, open to everyone.</p><div><a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="mailto:hello@example.com">Contact</a></div><small>© <span id="year"></span> Free Computer Education</small></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
